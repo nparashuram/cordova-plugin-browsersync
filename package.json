@@ -34,6 +34,6 @@
     "browserify": "^11.0.1"
   },
   "scripts": {
-    "createHook": "node_modules/.bin/browserify lib/singleHook.js --no-bundle-external -o after_prepare.js"
+    "createHook": "node_modules/.bin/browserify --node --no-bundle-external --standalone=cordova-bs-plugin -o after_prepare.js -e lib/projectHook.js"
   }
 }
