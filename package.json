@@ -3,7 +3,7 @@
   "id": "cordova-plugin-browsersync",
   "version": "1.0.0",
   "description": "Cordova Plugin to integrate browser-sync in the workflow",
-  "main": "index.js",
+  "main": "lib/index.js",
   "author": "Parashuram <code@nparashuram.com>",
   "license": "Apache 2.0",
   "cordova": {
