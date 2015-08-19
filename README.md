@@ -3,7 +3,7 @@
 Integarting [BrowserSync](http://browsersync.io) into your Cordova workflow. 
 
 - Watch files in the `www` folder and automatically reload HTML and CSS in all connected devices
-- Use BtowserSync's dashboard to control devices and reload them.
+- Use BrowserSync's dashboard to control devices and reload them.
 - Synchronize scrolls, clicks and form inputs across multiple devices.
 - Supports real devices and emulators for iOS and Android platforms
 
