@@ -20,7 +20,7 @@ There are three ways to use the code in this plugin. Ensure that you have added 
 This simplest way to integrate this in your Cordova workflow is to add it as a plugin
 
 ```
-cordova plugin add https://github.com/axemclion/cordova-plugin-browsersync.git
+cordova plugin add cordova-plugin-browsersync
 ```
 
 and then run run the cordova with `cordova run`
