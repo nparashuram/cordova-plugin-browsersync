@@ -46,7 +46,7 @@ You can also `require('cordova-plugin-browsersync)` in your node module and use 
 In many cases other hooks may copy over JS, CSS or Image assets into folders like `www\lib`, typically from locations like `bower_components`. These hooks may run at `after_prepare` and hence should be ignored in the live reload workflow. To achieve this, run the command as 
 
 ```
-cordova run -- -- live-reload --ignore=lib/**/*.*
+cordova run -- --live-reload --ignore=lib/**/*.*
 ```
 
 The `--ignore` commands takes an [anymatch](https://github.com/es128/anymatch) compatiable definatation relative to the `www` folder.
