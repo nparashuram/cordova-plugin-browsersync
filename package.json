@@ -30,9 +30,13 @@
     "elementtree": "^0.1.6",
     "glob": "^5.0.15",
     "npm": "^2.13.5",
+    "plist": "^1.1.0",
     "q": "^1.4.1"
   },
   "scripts": {
     "createHook": "node_modules/.bin/browserify --node --no-bundle-external --standalone=cordova-bs-plugin -o after_prepare.js -e lib/projectHook.js"
+  },
+  "devDependencies": {
+    "browserify": "^11.2.0"
   }
 }
