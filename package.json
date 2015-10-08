@@ -1,13 +1,13 @@
 {
   "name": "cordova-plugin-browsersync",
   "id": "cordova-plugin-browsersync",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Cordova Plugin to integrate browser-sync in the workflow",
   "main": "lib/index.js",
   "author": "Parashuram <code@nparashuram.com>",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "cordova": {
-    "id": "cordova-plugin-camera",
+    "id": "cordova-plugin-browsersync",
     "platforms": [
       "android",
       "ios"
@@ -25,15 +25,18 @@
   },
   "dependencies": {
     "browser-sync": "^2.8.2",
+    "cheerio": "^0.19.0",
+    "csp-parse": "0.0.2",
     "elementtree": "^0.1.6",
-    "glob": "^5.0.14",
+    "glob": "^5.0.15",
     "npm": "^2.13.5",
+    "plist": "^1.1.0",
     "q": "^1.4.1"
-  },
-  "devDependencies": {
-    "browserify": "^11.0.1"
   },
   "scripts": {
     "createHook": "node_modules/.bin/browserify --node --no-bundle-external --standalone=cordova-bs-plugin -o after_prepare.js -e lib/projectHook.js"
+  },
+  "devDependencies": {
+    "browserify": "^11.2.0"
   }
 }
