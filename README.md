@@ -58,3 +58,11 @@ To override this behaviour and manually select which host you want to use for th
 ```
 cordova run -- --live-reload --host=192.168.1.1
 ```
+
+### Setting custom index file
+If you do not have "index.html" in your `config.xml` under `content` node then you need to set this option to the value.
+Please use the `--index` option.
+
+```
+cordova run -- --live-reload --index=content.html
+```
