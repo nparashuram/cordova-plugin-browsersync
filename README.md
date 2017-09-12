@@ -59,6 +59,14 @@ To override this behaviour and manually select which host you want to use for th
 cordova run -- --live-reload --host=192.168.1.1
 ```
 
+### Setting custom port
+If you need to forward ports from your local computer to the device because the device is not in the same network as your device then you may getting an error or red circle.
+If this happens the problem could be the `3000` port. Then you can try another one for example `8090` which should work then.
+
+```
+cordova run -- --live-reload --port=8090
+```
+
 ### Setting custom index file
 If you do not have "index.html" in your `config.xml` under `content` node then you need to set this option to the value.
 Please use the `--index` option.
