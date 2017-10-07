@@ -1,5 +1,8 @@
 # Cordova Browser-Sync Plugin
 
+[![dependencies Status](https://david-dm.org/nparashuram/cordova-plugin-browsersync/status.svg)](https://david-dm.org/nparashuram/cordova-plugin-browsersync)
+[![devDependencies Status](https://david-dm.org/nparashuram/cordova-plugin-browsersync/dev-status.svg)](https://david-dm.org/nparashuram/cordova-plugin-browsersync?type=dev)
+
 Integrating [BrowserSync](http://browsersync.io) into your Cordova workflow.
 
 - Watch files in the `www` folder and automatically reload HTML and CSS in all connected devices

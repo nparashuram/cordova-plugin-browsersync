@@ -131,6 +131,11 @@
     var html = [];
     var resultCount = 0;
 
+    if (Object.keys(SERVERS).length === 0) {
+        // reload the page if the servers are not set yet
+        setTimeout(window.location.reload.bind(window.location), 200);
+    }
+
     for (var key in SERVERS) {
         html.push(tmpl
             .replace(/__KEY__/g, key)
@@ -173,9 +178,6 @@
         }
         if (result == null) {
             document.getElementById('error').style.display = 'block';
-        } else {
-            document.getElementById('connecting').innerHTML = '<h1>Redirecting to <br/></h1>' + SERVERS[result];
-            window.location.href = SERVERS[result];
         }
     }
     </script>
