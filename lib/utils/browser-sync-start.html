@@ -148,7 +148,10 @@
     var results = {};
 
     function onAjax(type, status) {
-        return function() {
+        return function(response) {
+            if(status && response.status === 404) {
+                status = false;
+            }
             document.getElementById('value-' + type).innerHTML = status ? ' &#x2713;' : '&#x274C;'
             results[type] = status;
             resultCount--;

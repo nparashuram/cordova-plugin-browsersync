@@ -77,3 +77,11 @@ Please use the `--index` option.
 ```
 cordova run -- --live-reload --index=content.html
 ```
+
+### Enable https
+If you need https you can enable it with this option.
+You can use `--https` for example.
+
+```
+cordova run -- --live-reload --https
+```
