@@ -24,19 +24,19 @@
     "url": "git@github.com:axemclion/cordova-plugin-browsersync.git"
   },
   "dependencies": {
-    "browser-sync": "^2.12.3",
-    "cheerio": "^0.19.0",
+    "browser-sync": "^2.18.13",
+    "cheerio": "^1.0.0-rc.2",
     "csp-parse": "0.0.2",
     "elementtree": "^0.1.6",
-    "glob": "^5.0.15",
-    "npm": "^2.13.5",
-    "plist": "^1.1.0",
+    "glob": "^7.1.2",
+    "npm": "^5.5.1",
+    "plist": "^2.1.0",
     "q": "^1.4.1"
   },
   "scripts": {
     "createHook": "node_modules/.bin/browserify --node --no-bundle-external --standalone=cordova-bs-plugin -o after_prepare.js -e lib/projectHook.js"
   },
   "devDependencies": {
-    "browserify": "^11.2.0"
+    "browserify": "^14.4.0"
   }
 }
