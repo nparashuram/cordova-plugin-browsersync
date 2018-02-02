@@ -32,6 +32,22 @@ cordova plugin add cordova-plugin-browsersync
 
 and then run run the cordova with `cordova run -- --live-reload`.
 
+#### Note
+
+If you ran into the error like below when you executed `"cordova plugin add cordova-plugin-browsersync"` command,
+
+```
+Failed to install 'cordova-plugin-browsersync': Error: Cannot find module 'npm'
+```
+
+Please try to upgrade `npm` command version which is your system global installed with following command.
+
+```
+npm install -g npm
+```
+
+I have not confirmed anything, but this error can be caused by a version of the `npm` module that is mismatched between globally installed and locally installed on the project.
+
 ### As a Cordova project hook
 Clone this repo and run `npm run createHook` to get a `after_prepare.js`. Add this file as an `after_prepare` [hook](http://cordova.apache.org/docs/en/edge/guide_appdev_hooks_index.md.html) to your config.xml. For example:
 
